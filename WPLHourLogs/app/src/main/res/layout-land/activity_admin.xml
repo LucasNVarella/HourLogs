@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="40dp"
+    android:paddingRight="40dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp" tools:context=".MainActivity"
+    android:background="#f8ff90"
+    android:nestedScrollingEnabled="false"
+    android:isScrollContainer="false"
+    android:fadeScrollbars="false"
+    android:saveEnabled="true"
+    android:scrollbarAlwaysDrawVerticalTrack="false"
+    android:id="@+id/admin">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="WPL Hour Logs - Admin"
+        android:id="@+id/lblHourLogsAdmin"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:textSize="45dp"
+        android:typeface="serif" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="60dp"
+        android:id="@+id/view"
+        android:layout_alignParentStart="true" />
+
+    <RelativeLayout
+        android:layout_width="472dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view"
+        android:layout_alignParentStart="true"
+        android:id="@+id/TransferLayout"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="➜ Transfer Pending Forms"
+            android:id="@+id/lblTransfer"
+            android:typeface="monospace"
+            android:textSize="27dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Transfer any new forms in this tablet to a computer via Bluetooth."
+            android:id="@+id/lblTransferDescription"
+            android:layout_alignParentStart="true"
+            android:autoText="false"
+            android:textAllCaps="false"
+            android:layout_below="@+id/lblTransfer"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:id="@+id/view2"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/TransferLayout" />
+
+    <RelativeLayout
+        android:layout_width="472dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view2"
+        android:layout_alignParentStart="true"
+        android:id="@+id/ReceiveNamesLayout"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="➜ Receive Names"
+            android:id="@+id/lblReceiveNames"
+            android:typeface="monospace"
+            android:textSize="27dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Open a file containing names of volunteers received by Bluetooth."
+            android:id="@+id/lblReceiveNamesDescription"
+            android:layout_alignParentStart="true"
+            android:autoText="false"
+            android:textAllCaps="false"
+            android:layout_below="@+id/lblReceiveNames"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:id="@+id/view3"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/ReceiveNamesLayout" />
+
+    <RelativeLayout
+        android:layout_width="472dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view3"
+        android:layout_alignParentStart="true"
+        android:id="@+id/ReceiveDescriptionsLayout"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="➜ Receive Descriptions"
+            android:id="@+id/lblReceiveDescriptions"
+            android:typeface="monospace"
+            android:textSize="27dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Open a file containing names of volunteering opportunities at WPL received by Bluetooth."
+            android:id="@+id/lblReceiveDescriptionsDescription"
+            android:layout_alignParentStart="true"
+            android:autoText="false"
+            android:textAllCaps="false"
+            android:layout_below="@+id/lblReceiveDescriptions"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:id="@+id/view4"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/ReceiveDescriptionsLayout" />
+
+    <RelativeLayout
+        android:layout_width="472dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view4"
+        android:layout_alignParentStart="true"
+        android:id="@+id/ReceiveKeywordsLayout"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="➜ Receive Keywords"
+            android:id="@+id/lblReceiveKeywords"
+            android:typeface="monospace"
+            android:textSize="27dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Open a file containing restricted keywords received by Bluetooth"
+            android:id="@+id/lblReceiveKeywordsDescription"
+            android:layout_alignParentStart="true"
+            android:autoText="false"
+            android:textAllCaps="false"
+            android:layout_below="@+id/lblReceiveKeywords"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:id="@+id/view5"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/ReceiveKeywordsLayout" />
+
+    <RelativeLayout
+        android:layout_width="472dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view2"
+        android:layout_alignParentStart="false"
+        android:id="@+id/EditNamesLayout"
+        android:clickable="true"
+        android:layout_alignParentEnd="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="➜ Edit Names"
+            android:id="@+id/lblEditNames"
+            android:typeface="monospace"
+            android:textSize="27dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Manually edit the names available in the Autocomplete file."
+            android:id="@+id/lblEditNamesDescription"
+            android:layout_alignParentStart="true"
+            android:autoText="false"
+            android:textAllCaps="false"
+            android:layout_below="@+id/lblEditNames"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="472dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view3"
+        android:layout_alignParentStart="false"
+        android:id="@+id/EditDescriptionsLayout"
+        android:clickable="true"
+        android:layout_alignParentEnd="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="➜ Edit Descriptions"
+            android:id="@+id/lblEditDescriptions"
+            android:typeface="monospace"
+            android:textSize="27dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Manually edit the volunteering opportunities at WPL available in the Autocomplete file."
+            android:id="@+id/lblEditDescriptionsDescription"
+            android:layout_alignParentStart="true"
+            android:autoText="false"
+            android:textAllCaps="false"
+            android:layout_below="@+id/lblEditDescriptions"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="472dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="false"
+        android:id="@+id/EditKeywordsLayout"
+        android:clickable="true"
+        android:layout_below="@+id/view4"
+        android:layout_alignParentEnd="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="➜ Edit Keywords"
+            android:id="@+id/lblEditKeywords"
+            android:typeface="monospace"
+            android:textSize="27dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Manually edit the restricted keywords to check for in the forms."
+            android:id="@+id/lblEditKeywordsDescription"
+            android:layout_alignParentStart="true"
+            android:autoText="false"
+            android:textAllCaps="false"
+            android:layout_below="@+id/lblEditKeywords"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="472dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view"
+        android:layout_alignParentStart="false"
+        android:id="@+id/ChangePasswordLayout"
+        android:clickable="true"
+        android:layout_alignParentEnd="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="➜ Change Password"
+            android:id="@+id/lblChangePassword"
+            android:typeface="monospace"
+            android:textSize="27dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Change the password required to access these administrative settings."
+            android:id="@+id/lblChangePasswordDescription"
+            android:layout_alignParentStart="true"
+            android:autoText="false"
+            android:textAllCaps="false"
+            android:layout_below="@+id/lblChangePassword"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

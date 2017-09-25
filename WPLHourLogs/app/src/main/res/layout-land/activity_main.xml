@@ -1,0 +1,273 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="#f8ff90"
+    android:nestedScrollingEnabled="false"
+    android:isScrollContainer="false"
+    android:fadeScrollbars="false"
+    android:saveEnabled="true"
+    android:scrollbarAlwaysDrawVerticalTrack="false"
+    android:id="@+id/user">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="WPL Hour Logs"
+        android:id="@+id/lblHourLogs"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:textSize="45dp"
+        android:typeface="serif" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="60dp"
+        android:id="@+id/view"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Full Name"
+        android:id="@+id/lblName"
+        android:layout_below="@+id/view"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp"
+        android:textSize="25dp"
+        android:typeface="monospace"
+        android:textStyle="bold" />
+
+    <AutoCompleteTextView
+        android:layout_width="450dp"
+        android:layout_height="50dp"
+        android:inputType="textCapWords|textPersonName"
+        android:ems="10"
+        android:id="@+id/txtName"
+        android:layout_below="@+id/lblName"
+        android:layout_alignParentStart="true"
+        android:background="#ffffff"
+        android:textSize="24dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentEnd="false"
+        android:typeface="serif"
+        android:maxLength="150"
+        android:singleLine="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Date"
+        android:id="@+id/lblDate"
+        android:layout_below="@+id/txtName"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="45dp"
+        android:textSize="25dp"
+        android:typeface="monospace"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Number of Hours"
+        android:id="@+id/lblNumOfHours"
+        android:textSize="25dp"
+        android:typeface="monospace"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_above="@+id/txtName"
+        android:layout_toEndOf="@+id/txtName"
+        android:layout_marginStart="30dp" />
+
+    <EditText
+    android:layout_width="80dp"
+    android:layout_height="50dp"
+    android:inputType="number"
+    android:ems="10"
+    android:id="@+id/txtHours"
+    android:background="#ffffff"
+    android:layout_below="@+id/lblNumOfHours"
+    android:layout_toEndOf="@+id/addHour"
+    android:layout_marginTop="10dp"
+    android:textAlignment="center"
+        android:text="0"
+        android:textSize="24dp"
+        android:maxLength="2"
+        android:typeface="serif" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:id="@+id/addHour"
+        android:textSize="20dp"
+        android:layout_alignTop="@+id/txtName"
+        android:layout_toRightOf="@+id/txtName"
+        android:layout_marginStart="30dp"
+        android:layout_alignBottom="@+id/txtName" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Hour(s)"
+        android:id="@+id/lblHours"
+        android:layout_below="@+id/txtHours"
+        android:layout_toEndOf="@+id/addHour"
+        android:layout_marginStart="8dp"
+        android:textSize="20dp"
+        android:textColor="#000000" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:id="@+id/subHour"
+        android:layout_alignTop="@+id/txtHours"
+        android:layout_toEndOf="@+id/txtHours"
+        android:layout_alignBottom="@+id/txtHours"
+        android:textSize="25dp" />
+
+
+
+
+    <EditText
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/txtMins"
+        android:background="#ffffff"
+        android:layout_below="@+id/lblNumOfHours"
+        android:layout_toEndOf="@+id/addMin"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:maxLength="2"
+        android:text="0"
+        android:textSize="24dp"
+        android:typeface="serif" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:id="@+id/addMin"
+        android:textSize="20dp"
+        android:layout_alignTop="@+id/subHour"
+        android:layout_toEndOf="@id/subHour"
+        android:layout_marginStart="60dp"
+        android:layout_above="@+id/lblDate" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Minutes"
+        android:id="@+id/lblMins"
+        android:layout_below="@+id/txtMins"
+        android:layout_toEndOf="@+id/addMin"
+        android:layout_marginStart="6dp"
+        android:textSize="20dp"
+        android:textColor="#000000" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:id="@+id/subMin"
+        android:layout_alignTop="@+id/txtMins"
+        android:layout_toEndOf="@+id/txtMins"
+        android:layout_alignBottom="@+id/txtMins"
+        android:textSize="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Description of Work"
+        android:id="@+id/lblDescription"
+        android:textSize="25dp"
+        android:typeface="monospace"
+        android:textStyle="bold"
+        android:layout_above="@+id/btnSetDate"
+        android:layout_alignStart="@+id/addHour" />
+
+    <Button
+        android:layout_width="155dp"
+        android:layout_height="70dp"
+        android:text="SUBMIT!"
+        android:id="@+id/btnSubmit"
+        android:textSize="27dp"
+        android:textStyle="italic"
+        android:typeface="serif"
+        android:layout_alignTop="@+id/btnAdmin"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="155dp"
+        android:layout_height="70dp"
+        android:text="Authorized Only"
+        android:id="@+id/btnAdmin"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_below="@+id/txtDescription"
+        android:layout_alignParentStart="false"
+        android:layout_marginTop="65dp" />
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/txtDate"
+        android:background="#ffffff"
+        android:typeface="serif"
+        android:hint="MM/DD/YYYY"
+        android:textSize="24dp"
+        android:layout_alignTop="@+id/btnToday"
+        android:layout_toEndOf="@+id/lblName"
+        android:layout_alignBottom="@+id/btnToday" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:text="TODAY"
+        android:id="@+id/btnToday"
+        android:layout_below="@+id/lblDate"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/txtDate"
+        android:textSize="23dp"
+        android:typeface="serif"
+        android:textStyle="bold"
+        android:layout_alignEnd="@+id/lblName" />
+
+    <AutoCompleteTextView
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:id="@+id/txtDescription"
+        android:layout_below="@+id/lblDescription"
+        android:background="#ffffff"
+        android:textSize="24dp"
+        android:typeface="serif"
+        android:layout_marginTop="10dp"
+        android:layout_alignStart="@+id/lblDescription"
+        android:inputType="textCapWords" />
+
+    <ImageButton
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSetDate"
+        android:layout_alignTop="@+id/btnToday"
+        android:layout_toEndOf="@+id/txtDate"
+        android:layout_alignBottom="@+id/btnToday"
+        android:src="@android:drawable/ic_menu_my_calendar" />
+
+</RelativeLayout>
